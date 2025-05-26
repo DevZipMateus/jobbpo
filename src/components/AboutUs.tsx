@@ -1,12 +1,35 @@
 
 import React from 'react';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Users, Target, Shield, Zap } from 'lucide-react';
 
 const AboutUs = () => {
+  const differentials = [
+    {
+      icon: Users,
+      title: 'Equipe Especializada',
+      description: 'Profissionais com mais de 10 anos de experiência em gestão financeira e BPO, sempre atualizados com as melhores práticas do mercado.'
+    },
+    {
+      icon: Target,
+      title: 'Foco em Resultados',
+      description: 'Metodologia comprovada que já ajudou centenas de empresas a reduzir custos operacionais em até 40% e aumentar a eficiência financeira.'
+    },
+    {
+      icon: Shield,
+      title: 'Segurança e Compliance',
+      description: 'Processos certificados, backup em nuvem, controles de acesso rigorosos e total conformidade com legislações fiscais e trabalhistas.'
+    },
+    {
+      icon: Zap,
+      title: 'Tecnologia Avançada',
+      description: 'Ferramentas modernas de automação, integração com sistemas ERP e dashboards em tempo real para total transparência dos processos.'
+    }
+  ];
+
   return (
     <section id="about" className="section bg-gray-50">
       <div className="container-custom">
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 items-center mb-16">
           {/* Left Column - Image */}
           <div className="lg:w-1/2 animate-fade-in">
             <div className="relative">
@@ -52,47 +75,47 @@ const AboutUs = () => {
               previsibilidade e segurança financeira para pequenas e médias empresas de diversos setores.
             </p>
             
-            {/* Key Points */}
-            <div className="space-y-4 mb-8">
-              <div className="flex items-start animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <div className="bg-blue-900/10 p-1 rounded-full mr-3 mt-1">
-                  <Check className="text-blue-900" size={16} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">Equipe Especializada</h4>
-                  <p className="text-gray-600">Profissionais experientes em gestão financeira e BPO</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start animate-fade-in" style={{ animationDelay: '0.5s' }}>
-                <div className="bg-blue-900/10 p-1 rounded-full mr-3 mt-1">
-                  <Check className="text-blue-900" size={16} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">Foco em Resultados</h4>
-                  <p className="text-gray-600">Agilidade, eficiência e controle para sua empresa</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                <div className="bg-blue-900/10 p-1 rounded-full mr-3 mt-1">
-                  <Check className="text-blue-900" size={16} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-semibold text-gray-900 mb-1">Tecnologia Avançada</h4>
-                  <p className="text-gray-600">Ferramentas modernas para máxima eficiência</p>
-                </div>
-              </div>
-            </div>
-            
             <a 
               href="#contact" 
               className="bg-blue-900 hover:bg-blue-800 text-orange-400 px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2 font-medium inline-flex animate-fade-in" 
-              style={{ animationDelay: '0.7s' }}
+              style={{ animationDelay: '0.4s' }}
             >
               <span>Conheça Nossos Diferenciais</span>
               <ArrowRight size={18} />
             </a>
+          </div>
+        </div>
+
+        {/* Diferenciais Competitivos */}
+        <div className="mt-16">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              Por que escolher a JOB BPO Financeiro?
+            </h3>
+            <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+              Nossos diferenciais competitivos garantem que você tenha a melhor experiência 
+              em terceirização de processos financeiros.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {differentials.map((differential, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 animate-fade-in"
+                style={{ animationDelay: `${0.5 + index * 0.1}s` }}
+              >
+                <div className="flex items-start">
+                  <div className="bg-blue-900/10 p-3 rounded-lg mr-4 flex-shrink-0">
+                    <differential.icon className="text-blue-900" size={24} />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">{differential.title}</h4>
+                    <p className="text-gray-600">{differential.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
