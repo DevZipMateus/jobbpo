@@ -7,6 +7,7 @@ import Services from '../components/Services';
 import AboutUs from '../components/AboutUs';
 import Team from '../components/Team';
 import Plans from '../components/Plans';
+import EgestorERP from '../components/EgestorERP';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import FloatingButton from '../components/FloatingButton';
@@ -27,6 +28,7 @@ const Index = () => {
         <AboutUs />
         <Team />
         <Plans />
+        <EgestorERP />
         <Testimonials />
         <Contact />
       </main>
