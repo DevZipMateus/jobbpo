@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import WhatIsBPO from '../components/WhatIsBPO';
 import Services from '../components/Services';
 import WorkProcess from '../components/WorkProcess';
+import WorkflowProcess from '../components/WorkflowProcess';
 import AboutUs from '../components/AboutUs';
 import Plans from '../components/Plans';
 import EgestorERP from '../components/EgestorERP';
@@ -28,6 +29,7 @@ const Index = () => {
         <WhatIsBPO />
         <Services />
         <WorkProcess />
+        <WorkflowProcess />
         <AboutUs />
         <Plans />
         <EgestorERP />
