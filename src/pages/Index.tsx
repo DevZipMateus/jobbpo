@@ -5,7 +5,6 @@ import Footer from '../components/Layout/Footer';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import AboutUs from '../components/AboutUs';
-import Team from '../components/Team';
 import Plans from '../components/Plans';
 import EgestorERP from '../components/EgestorERP';
 import Testimonials from '../components/Testimonials';
@@ -26,7 +25,6 @@ const Index = () => {
         <Hero />
         <Services />
         <AboutUs />
-        <Team />
         <Plans />
         <EgestorERP />
         <Testimonials />

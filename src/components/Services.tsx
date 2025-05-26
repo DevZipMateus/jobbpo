@@ -6,28 +6,28 @@ const services = [
   {
     id: 1,
     title: 'Contas a Pagar',
-    description: 'Gestão completa do fluxo de contas a pagar, incluindo lançamentos, controle de vencimentos e pagamentos.',
+    description: 'Gestão completa do fluxo de contas a pagar, incluindo lançamentos, controle de vencimentos e pagamentos automáticos.',
     icon: CreditCard,
     delay: '0s'
   },
   {
     id: 2,
     title: 'Contas a Receber',
-    description: 'Controle eficiente das receitas, acompanhamento de recebimentos e gestão do fluxo de caixa.',
+    description: 'Controle eficiente das receitas, acompanhamento de recebimentos e gestão estratégica do fluxo de caixa.',
     icon: Receipt,
     delay: '0.1s'
   },
   {
     id: 3,
     title: 'Faturamento',
-    description: 'Emissão e controle de notas fiscais, gestão do processo de faturamento e acompanhamento.',
+    description: 'Emissão e controle de notas fiscais, gestão do processo de faturamento e acompanhamento completo.',
     icon: FileText,
     delay: '0.2s'
   },
   {
     id: 4,
     title: 'Cobrança e Consultorias',
-    description: 'Serviços de cobrança especializada e consultorias financeiras para otimizar seus processos.',
+    description: 'Serviços de cobrança especializada e consultorias financeiras estratégicas para otimizar seus processos.',
     icon: Phone,
     delay: '0.3s'
   }

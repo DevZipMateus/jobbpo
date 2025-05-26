@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, Facebook, Instagram, Twitter, Linkedin, Menu, X } from 'lucide-react';
+import { Mail, Phone, Instagram, Menu, X } from 'lucide-react';
 import { useIsMobile } from '../../hooks/use-mobile';
 
 const Header = () => {
@@ -49,15 +49,6 @@ const Header = () => {
           <div className="flex space-x-4">
             <a href="https://instagram.com/jobbpofinanceiro" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-orange-500 transition-colors duration-300">
               <Instagram size={18} />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors duration-300">
-              <Facebook size={18} />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors duration-300">
-              <Twitter size={18} />
-            </a>
-            <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors duration-300">
-              <Linkedin size={18} />
             </a>
           </div>
         </div>

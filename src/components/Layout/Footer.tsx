@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -49,17 +49,8 @@ const Footer = () => {
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-xl font-semibold mb-6">Redes Sociais</h3>
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="bg-white/10 hover:bg-orange-400/80 hover:text-blue-900 transition-colors duration-300 p-2 rounded-full">
-                <Facebook size={20} />
-              </a>
               <a href="https://instagram.com/jobbpofinanceiro" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-orange-400/80 hover:text-blue-900 transition-colors duration-300 p-2 rounded-full">
                 <Instagram size={20} />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-orange-400/80 hover:text-blue-900 transition-colors duration-300 p-2 rounded-full">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="bg-white/10 hover:bg-orange-400/80 hover:text-blue-900 transition-colors duration-300 p-2 rounded-full">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
