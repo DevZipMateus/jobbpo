@@ -7,7 +7,7 @@ const EgestorERP = () => {
   const egestorLink = "https://www.egestor.com.br/afl/12245";
 
   return (
-    <section className="py-20 bg-white overflow-hidden relative">
+    <section id="egestor" className="py-20 bg-white overflow-hidden relative">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-20 h-20 bg-gray-200 rounded-full"></div>
@@ -23,7 +23,7 @@ const EgestorERP = () => {
           </div>
           <a href={egestorLink} target="_blank" rel="noopener noreferrer" className="inline-block hover:opacity-90 transition-opacity">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
-              Sistema de gestão empresarial
+              eGestor - Sistema de gestão empresarial
             </h2>
           </a>
           <p className="text-xl md:text-2xl text-gray-700 font-medium max-w-2xl mx-auto">

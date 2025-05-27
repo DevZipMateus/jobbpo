@@ -37,6 +37,9 @@ const Hero = () => {
             <a href="#services" className="bg-white hover:bg-gray-50 text-blue-900 border border-orange-400/20 px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-orange-400/50 shadow-sm">
               Nossos serviços
             </a>
+            <a href="#egestor" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-green-400/50 shadow-sm">
+              Sistema ERP
+            </a>
           </div>
         </div>
       </div>
