@@ -7,132 +7,204 @@ import { cn } from '../lib/utils';
 const plans = [
   {
     id: 1,
-    name: 'Plano Essencial',
-    price: '299,99',
-    description: 'Ideal para pequenas empresas que buscam terceirização básica de rotinas financeiras.',
+    name: 'Bronze',
+    price: '997,00',
+    description: 'Plano básico com serviços essenciais para sua gestão financeira.',
     features: [
       {
-        text: 'Contas a Pagar (até 50 lançamentos/mês)',
+        text: 'Implantação e Treinamento',
         included: true
       },
       {
-        text: 'Contas a Receber (até 30 lançamentos/mês)',
+        text: 'Gerente Exclusivo',
         included: true
       },
       {
-        text: 'Relatórios financeiros básicos',
+        text: 'Atendimento Remoto',
         included: true
       },
       {
-        text: 'Suporte por e-mail',
+        text: 'Contas a Pagar e Receber',
         included: true
       },
       {
-        text: 'Faturamento completo',
+        text: 'Agendamento Bancário',
+        included: true
+      },
+      {
+        text: 'Conciliação Bancária e de Caixa',
+        included: true
+      },
+      {
+        text: 'Relatórios de Acompanhamentos',
+        included: true
+      },
+      {
+        text: 'Envio Documentação para a Contabilidade',
+        included: true
+      },
+      {
+        text: 'Faturamento NFe e NFes',
         included: false
       },
       {
-        text: 'Consultoria estratégica',
+        text: 'Emissão e envio Boletos',
         included: false
       },
       {
-        text: 'Atendimento prioritário',
+        text: 'Reunião Remota de 2 h/mês para Análise',
         included: false
       },
       {
-        text: 'Relatórios personalizados',
+        text: 'Painel de Indicadores com Dashboard',
+        included: false
+      },
+      {
+        text: 'Análise Financeira por Centro de Custos',
+        included: false
+      },
+      {
+        text: 'Análise do Fluxo de Caixa',
         included: false
       }
     ],
     popular: false,
     delay: '0s',
-    color: 'bg-neutral-50'
+    color: 'bg-orange-600 text-white'
   },
   {
     id: 2,
-    name: 'Plano Business',
-    price: '599,99',
-    description: 'Perfeito para empresas que necessitam de gestão financeira mais abrangente e suporte dedicado.',
+    name: 'Prata',
+    price: 'sob consulta',
+    description: 'Plano intermediário com mais recursos para sua empresa.',
     features: [
       {
-        text: 'Contas a Pagar (até 150 lançamentos/mês)',
+        text: 'Implantação e Treinamento',
         included: true
       },
       {
-        text: 'Contas a Receber (até 100 lançamentos/mês)',
+        text: 'Gerente Exclusivo',
         included: true
       },
       {
-        text: 'Relatórios financeiros detalhados',
+        text: 'Atendimento Remoto',
         included: true
       },
       {
-        text: 'Suporte por e-mail e telefone',
+        text: 'Contas a Pagar e Receber',
         included: true
       },
       {
-        text: 'Faturamento completo',
+        text: 'Agendamento Bancário',
         included: true
       },
       {
-        text: 'Consultoria estratégica mensal',
+        text: 'Conciliação Bancária e de Caixa',
         included: true
       },
       {
-        text: 'Atendimento prioritário',
+        text: 'Relatórios de Acompanhamentos',
+        included: true
+      },
+      {
+        text: 'Envio Documentação para a Contabilidade',
+        included: true
+      },
+      {
+        text: 'Faturamento NFe e NFes',
+        included: true
+      },
+      {
+        text: 'Emissão e envio Boletos',
+        included: true
+      },
+      {
+        text: 'Reunião Remota de 2 h/mês para Análise',
+        included: true
+      },
+      {
+        text: 'Painel de Indicadores com Dashboard',
         included: false
       },
       {
-        text: 'Relatórios personalizados',
+        text: 'Análise Financeira por Centro de Custos',
+        included: false
+      },
+      {
+        text: 'Análise do Fluxo de Caixa',
         included: false
       }
     ],
     popular: true,
     delay: '0.1s',
-    color: 'bg-orange-50'
+    color: 'bg-gray-400 text-white'
   },
   {
     id: 3,
-    name: 'Plano Enterprise',
-    price: '1.199,99',
-    description: 'Solução completa para empresas que requerem gestão financeira contínua e consultoria estratégica.',
+    name: 'Ouro',
+    price: 'sob consulta',
+    description: 'Plano completo com todos os recursos disponíveis.',
     features: [
       {
-        text: 'Contas a Pagar (ilimitado)',
+        text: 'Implantação e Treinamento',
         included: true
       },
       {
-        text: 'Contas a Receber (ilimitado)',
+        text: 'Gerente Exclusivo',
         included: true
       },
       {
-        text: 'Relatórios financeiros completos',
+        text: 'Atendimento Remoto',
         included: true
       },
       {
-        text: 'Suporte ilimitado (e-mail, telefone e WhatsApp)',
+        text: 'Contas a Pagar e Receber',
         included: true
       },
       {
-        text: 'Faturamento completo',
+        text: 'Agendamento Bancário',
         included: true
       },
       {
-        text: 'Consultoria estratégica semanal',
+        text: 'Conciliação Bancária e de Caixa',
         included: true
       },
       {
-        text: 'Atendimento prioritário',
+        text: 'Relatórios de Acompanhamentos',
         included: true
       },
       {
-        text: 'Relatórios personalizados',
+        text: 'Envio Documentação para a Contabilidade',
+        included: true
+      },
+      {
+        text: 'Faturamento NFe e NFes',
+        included: true
+      },
+      {
+        text: 'Emissão e envio Boletos',
+        included: true
+      },
+      {
+        text: 'Reunião Remota de 2 h/mês para Análise',
+        included: true
+      },
+      {
+        text: 'Painel de Indicadores com Dashboard',
+        included: true
+      },
+      {
+        text: 'Análise Financeira por Centro de Custos',
+        included: true
+      },
+      {
+        text: 'Análise do Fluxo de Caixa',
         included: true
       }
     ],
     popular: false,
     delay: '0.2s',
-    color: 'bg-neutral-50'
+    color: 'bg-yellow-600 text-white'
   }
 ];
 
@@ -144,11 +216,9 @@ const Plans = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <div className="inline-block bg-blue-900/10 text-blue-900 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
-            Nossos Planos
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Escolha o plano ideal para o seu negócio
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <span className="text-orange-500">Conheça os</span><br />
+            <span className="text-blue-900">NOSSOS PLANOS</span>
           </h2>
           <p className="text-gray-600 text-lg">
             Oferecemos planos flexíveis que se adaptam às necessidades e ao tamanho da sua empresa.
@@ -170,27 +240,33 @@ const Plans = () => {
             >
               {/* Plan Header */}
               <div className={cn(
-                "p-6 md:p-8 relative",
-                plan.popular 
-                  ? "bg-gradient-to-br from-orange-100 to-orange-50" 
-                  : plan.color
+                "p-6 md:p-8 relative text-center",
+                plan.color
               )}>
                 {/* Popular Badge */}
                 {plan.popular && (
-                  <div className="bg-blue-900 text-orange-400 text-xs font-semibold px-3 py-1 rounded-full absolute top-4 right-4">
+                  <div className="bg-orange-500 text-white text-xs font-semibold px-3 py-1 rounded-full absolute top-4 right-4">
                     MAIS POPULAR
                   </div>
                 )}
                 
-                {/* Plan Name and Price */}
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-                <div className="flex items-end mb-4">
-                  <span className="text-4xl font-bold text-gray-900">R$ {plan.price}</span>
-                  <span className="text-gray-600 ml-1 mb-1">/mês</span>
+                {/* Plan Name */}
+                <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
+                
+                {/* Price */}
+                <div className="mb-6">
+                  {plan.price === 'sob consulta' ? (
+                    <div className="text-lg font-medium">R$ sob consulta</div>
+                  ) : (
+                    <div className="flex items-end justify-center">
+                      <span className="text-4xl font-bold">R$ {plan.price}</span>
+                      <span className="ml-1 mb-1">por mês</span>
+                    </div>
+                  )}
                 </div>
                 
                 {/* Description */}
-                <p className="text-gray-700 mb-6">
+                <p className="mb-6 opacity-90">
                   {plan.description}
                 </p>
                 
@@ -199,25 +275,23 @@ const Plans = () => {
                   href="https://wa.me/5581991341556" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="block text-center py-3 px-6 rounded-lg transition-colors duration-300 w-full bg-blue-900 hover:bg-blue-800 text-orange-400"
+                  className="block text-center py-3 px-6 rounded-lg transition-colors duration-300 w-full bg-white text-gray-900 hover:bg-gray-100 font-medium"
                 >
-                  <div className="flex items-center justify-center gap-2">
-                    <span>Solicitar Plano</span>
-                  </div>
+                  Solicitar Plano
                 </a>
               </div>
               
               {/* Features */}
               <div className="p-6 md:p-8 bg-white">
-                <h4 className="font-semibold text-gray-900 mb-4">O que está incluso:</h4>
+                <h4 className="font-semibold text-gray-900 mb-4">Serviços inclusos:</h4>
                 <ul className="space-y-3">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <div className={cn(
                         "p-1 rounded-full mr-3 mt-0.5 flex-shrink-0",
                         feature.included 
-                          ? "bg-orange-100 text-orange-600" 
-                          : "bg-gray-100 text-gray-400"
+                          ? "bg-green-100 text-green-600" 
+                          : "bg-red-100 text-red-600"
                       )}>
                         {feature.included ? (
                           <Check size={isMobile ? 14 : 16} />
@@ -229,7 +303,7 @@ const Plans = () => {
                         "text-sm",
                         feature.included 
                           ? "text-gray-700" 
-                          : "text-gray-400 line-through"
+                          : "text-gray-400"
                       )}>
                         {feature.text}
                       </span>
