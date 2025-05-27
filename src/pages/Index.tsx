@@ -5,6 +5,7 @@ import Footer from '../components/Layout/Footer';
 import Hero from '../components/Hero';
 import WhatIsBPO from '../components/WhatIsBPO';
 import Services from '../components/Services';
+import ServicesCircle from '../components/ServicesCircle';
 import WorkProcess from '../components/WorkProcess';
 import WorkflowProcess from '../components/WorkflowProcess';
 import AboutUs from '../components/AboutUs';
@@ -28,6 +29,7 @@ const Index = () => {
         <Hero />
         <WhatIsBPO />
         <Services />
+        <ServicesCircle />
         <WorkProcess />
         <WorkflowProcess />
         <AboutUs />
