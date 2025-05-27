@@ -73,10 +73,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
               <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
               <a 
-                href="mailto:antonio.job@job.net.br"
+                href="mailto:comercial@job.net.br"
                 className="bg-blue-900 hover:bg-blue-800 text-orange-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>antonio.job@job.net.br</span>
+                <span>comercial@job.net.br</span>
               </a>
             </div>
           </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-neutral-600">Sábado:</span>
-                  <span className="font-medium text-neutral-900">09:00 - 13:00</span>
+                  <span className="font-medium text-neutral-900">Fechado</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-neutral-600">Domingo:</span>

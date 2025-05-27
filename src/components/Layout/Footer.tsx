@@ -17,7 +17,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>antonio.job@job.net.br</span>
+                <span>comercial@job.net.br</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0" size={18} />
